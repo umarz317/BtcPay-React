@@ -8,7 +8,7 @@ const Pay = () => {
                 <input type="hidden" name="email" value="customer@example.com" />
                 <input type="hidden" name="orderId" value="CustomOrderId" />
                 <input type="hidden" name="notificationUrl" value="https://example.com/callbacks" />
-                <input type="hidden" name="redirectUrl" value="https://example.com/thanksyou" />
+                <input type="hidden" name="redirectUrl" value="https://test-btc-rapid.vercel.app/#/complete" />
                 <button className="button" type="submit" name="choiceKey" value="payment">Pay Now!</button>
             </form>
         </div>
