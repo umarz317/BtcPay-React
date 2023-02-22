@@ -4,7 +4,7 @@ const Pay = (props) => {
     return (
         <div className="pay">
             <h1 style={{position:'absolute',top:'25px'}} className="font">Packages</h1>
-            <CardOffer value="package1" heading="Package 1" price="1" package='Lorem ipsum odor amet' package1='consectetuer adipiscing elit'/>
+            <CardOffer value="payment" heading="Package 1" price="1" package='Lorem ipsum odor amet' package1='consectetuer adipiscing elit'/>
             <CardOffer value="package2" heading="Package 2" price="2" package='Lorem ipsum odor amet' package1='consectetuer adipiscing elit'/>
             <CardOffer value="package3" heading="Package 3" price="3" package='Lorem ipsum odor amet' package1='consectetuer adipiscing elit'/>
         </div>
