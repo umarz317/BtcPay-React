@@ -7,7 +7,7 @@ import CallBack from './components/CallBack';
 function App() {
   return (
     
-    <div className="App">
+    <div>
       <Routes>
           <Route exact path='/' element={<Pay/>} />
           <Route path='/complete' element={<CallBack/>} />

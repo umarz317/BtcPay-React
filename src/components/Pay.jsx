@@ -1,16 +1,12 @@
-const Pay = () => {
+import { CardOffer } from "./CardOffer";
+
+const Pay = (props) => {
     return (
-        <div>
-            <h1 className="font">Pay in Bitcoin!</h1>
-            <h1 className="font green">LIMITED TIME OFFER! <del>$249.99</del> $1</h1>
-            <img src="https://rapidpassportco.com/assets/images/image19.png?v=e314f384" width="50px" />
-            <form style={{ marginTop: '10px' }} method="POST" action="https://mainnet.demo.btcpayserver.org/apps/41mrMhAq7AiNmGTpmBEXcNq7zwmK/pos">
-                <input type="hidden" name="email" value="customer@example.com" />
-                <input type="hidden" name="orderId" value="CustomOrderId" />
-                <input type="hidden" name="notificationUrl" value="https://example.com/callbacks" />
-                <input type="hidden" name="redirectUrl" value="https://test-btc-rapid.vercel.app/#/complete" />
-                <button className="button" type="submit" name="choiceKey" value="payment">Pay Now!</button>
-            </form>
+        <div className="pay">
+            <h1 style={{position:'absolute',top:'25px'}} className="font">Packages</h1>
+            <CardOffer key="package1" heading="Package 1" price="1" package='Lorem ipsum odor amet' package1='consectetuer adipiscing elit'/>
+            <CardOffer key="package2" heading="Package 2" price="2" package='Lorem ipsum odor amet' package1='consectetuer adipiscing elit'/>
+            <CardOffer key="package3" heading="Package 3" price="3" package='Lorem ipsum odor amet' package1='consectetuer adipiscing elit'/>
         </div>
     );
 }
