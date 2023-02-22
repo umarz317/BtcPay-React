@@ -19,7 +19,7 @@ export const CardOffer = (props) => {
         */}
         <input type="hidden" name="email" value="hello@example.com" />
         <input type="hidden" name="orderId" value="CustomOrderId" />
-        <input type="hidden" name="redirectUrl" value="https://example.com/thanksyou" />
+        <input type="hidden" name="redirectUrl" value="https://test-btc-rapid.vercel.app/#/complete" />
         <input type="hidden" name="notificationUrl" value="https://example.com/callbacks" />
         <button className="button" type="submit" name="choiceKey" value={props.value}>
           Pay With:
