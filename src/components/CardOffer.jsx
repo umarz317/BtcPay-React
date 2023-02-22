@@ -16,10 +16,9 @@ export const CardOffer = (props) => {
       <form style={{ marginTop: '10px' }} method="POST" action="https://btcpay0.voltageapp.io/apps/3mpnxnDcDQH3YBw8wETeavfSQvAN/pos">
         <input type="hidden" name="email" value="customer@example.com" />
         <input type="hidden" name="orderId" value="CustomOrderId" />
-        <input type="hidden" name="notificationUrl" value="https://example.com/callbacks" />
         <input type="hidden" name="redirectUrl" value="https://test-btc-rapid.vercel.app/#/complete" />
         
-        <button className="button" type="submit" name="choiceKey" value={props.key}>
+        <button className="button" type="submit" name="choiceKey" value={props.value}>
           Pay With:
         <img width='20px'src={btc} style={{marginLeft:'4px'}}/>
         <img width='20px'src={light}/>
