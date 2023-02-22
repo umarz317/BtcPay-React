@@ -49,6 +49,19 @@ body {
   border: 1px solid white;
 }
 
+@media(max-width:786px){
+  .pay{
+    margin-top: 130px;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+  }
+  .card{
+    margin-bottom: 10px;
+  }
+  
+}
+
 
 @font-face {
   font-family: font;
